@@ -9,7 +9,7 @@ let count = 0;
 
 app.get('/', (req, res) => {
   count++;
-  res.json({"container": hostname, "hit": count})
+  res.json({"container": hostname, "hit": count, "version": "1.1.0"});
 });
 
 let port = process.env.PORT || 3000;
